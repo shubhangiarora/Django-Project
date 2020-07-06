@@ -1,0 +1,17 @@
+Life,the universe
+### Code by Shubhangi Arora
+#### Written on 6-JUl-2020
+while True:
+    inp=input()
+    if inp=='42':
+        break
+    else:
+        print(inp)
+
+Reverse The Number 
+# Author Shubhangi_Arora
+# Date Created 6-Jul-2020
+t=int(input())
+for i in range(t):
+    inp=input()
+    print(inp[::-1].lstrip('0'))
