@@ -1,0 +1,8 @@
+### Code by Shubhangi Arora
+#### Written on 6-JUl-2020
+while True:
+    inp=input()
+    if inp=='42':
+        break
+    else:
+        print(inp)
