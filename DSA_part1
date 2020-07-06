@@ -15,3 +15,51 @@ t=int(input())
 for i in range(t):
     inp=input()
     print(inp[::-1].lstrip('0'))
+    
+
+
+### Lapindromes
+
+for _ in range(int(input())):
+    inp=input()
+    flag=0
+    if len(inp)<2:
+        print('YES')
+    elif len(inp)%2==0:
+        a=inp[:len(inp)//2]
+        b=inp[len(inp)//2:]
+        for i in a:
+            if a.count(i)==b.count(i):
+                continue
+            else:
+                flag=1
+                break
+    else:
+        a=inp[:len(inp)//2]
+        b=inp[len(inp)//2+1:]
+        for i in a:
+            if a.count(i)==b.count(i):
+                continue
+            else:
+                flag=1
+                break
+    if flag==1:
+        print('NO')
+    else:
+        print('YES')
+        
+###Mobile Contest
+
+# cook your dish here
+try:
+    n=int(input())
+    for i in range(n):
+        arr.append(int(input()))
+        arr=sorted(arr)
+        for i in range(n):
+            arr[i]=arr[i]*(n-i)
+        print(max(arr))
+except:
+    pass
+
+    
